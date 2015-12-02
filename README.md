@@ -2,6 +2,8 @@
 
 This gulp framework's key feature is that it **outputs all your JavaScript console.log's** during a ***tns livesync***. Additionally it supports ecma6 files in NativeScript apps.
 
+Currently supporting NativeScript version 1.4.0
+
 ### Installation
 
 You need NativeScript installed.
