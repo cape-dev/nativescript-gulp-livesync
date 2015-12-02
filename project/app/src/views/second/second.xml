@@ -1,22 +1,15 @@
 <Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded" cssClass="container">
+
     <Page.actionBar>
         <ActionBar cssClass="actionbar">
             <ActionBar.titleView>
-                <Label text="Spielregeln" cssClass="actionbar bold"/>
+                <Label text="Dummy App" cssClass="actionbar bold"/>
             </ActionBar.titleView>
         </ActionBar>
     </Page.actionBar>
 
-    <ScrollView>
-        <StackLayout orientation="vertical" cssClass="rules text">
-            <Repeater items="{{ rules }}">
-                <Repeater.itemTemplate>
-                    <StackLayout orientation="vertical">
-                        <Label text="{{ 'Regel ' + number }}" cssClass="rule-number"/>
-                        <Label textWrap="true" text="{{ rule }}" />
-                    </StackLayout>
-                </Repeater.itemTemplate>
-            </Repeater>
-        </StackLayout>
-    </ScrollView>
+    <StackLayout horizontalAlignment="center" verticalAlignment="center">
+        <Button text="Home" tap="{{ views.home }}"/>
+    </StackLayout>
+
 </Page>

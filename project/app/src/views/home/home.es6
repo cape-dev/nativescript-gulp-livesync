@@ -1,11 +1,10 @@
-var Observable = require('data/observable').Observable;
-var views = require('../../shared/views');
+import { Observable } from 'data/observable';
+import * as views from '../../shared/views';
 
-var homeModel = new HomeModel();
 
 export function pageLoaded(args) {
   var page = args.object;
-  page.bindingContext = homeModel;
+  page.bindingContext = page.bindingContext || new HomeModel();
 }
 
 class HomeModel extends Observable {

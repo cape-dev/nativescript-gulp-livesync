@@ -1,15 +1,16 @@
-var Observable = require('data/observable').Observable;
-import { rules } from './rules-view-model';
+import { Observable } from 'data/observable';
+import * as views from '../../shared/views';
+
 
 export function pageLoaded(args) {
   var page = args.object;
-  page.bindingContext = page.bindingContext || new RulesModel();
+  page.bindingContext = page.bindingContext || new SecondModel();
 }
 
-class RulesModel extends Observable {
+class SecondModel extends Observable {
   constructor() {
     super();
 
-    this.rules = rules;
+    this.views = views;
   }
 }
