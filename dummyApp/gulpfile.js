@@ -121,9 +121,7 @@ gulp.task('run', function() {
 
 // default task runs with genymotion
 gulp.task('default', function() {
-  isAndroidEmulator = false;
-  logPattern = 'V/JS';
-  runSequence('run');
+  runSequence('live');
 });
 
 // emulator task runs with android emulator
@@ -133,7 +131,7 @@ gulp.task('emulator', function() {
   runSequence('run');
 });
 
-// live task runs on real device
+// live task runs on real device and on genymotion
 gulp.task('live', function() {
   isAndroidEmulator = false;
   logPattern = 'V/JS';
