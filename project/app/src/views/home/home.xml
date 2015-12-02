@@ -1,0 +1,16 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd" loaded="pageLoaded" cssClass="container">
+
+  <Page.actionBar>
+    <ActionBar cssClass="actionbar">
+      <ActionBar.titleView>
+        <Label text="Dummy App" cssClass="actionbar bold"/>
+      </ActionBar.titleView>
+    </ActionBar>
+  </Page.actionBar>
+
+  <StackLayout horizontalAlignment="center" verticalAlignment="center">
+    <Button text="Home" tap="{{ views.home }}" cssClass="home-buttons"/>
+    <Button text="Second View" tap="{{ views.second }}" cssClass="home-buttons"/>
+  </StackLayout>
+
+</Page>

@@ -1,0 +1,15 @@
+# Dependency directories
+node_modules
+
+# platforms
+platforms
+
+# webstorm
+.idea
+
+# mac files
+.DS_Store
+
+# build files
+project/app/views
+project/app/shared
